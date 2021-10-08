@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block content %}
+    }
+
+    <table class="content-table">
+        <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Price in EUR</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for ab in data %}
+        <tr>
+            <td>{{ ab.0 }}</td>
+            <td>{{ ab.1 }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>    
+    </table>
+{% endblock %}
